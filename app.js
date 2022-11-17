@@ -1,23 +1,23 @@
-// 1.assignment variable
+//1.Assignment variable
 const fname = "Mark Zuckaberg"
 
-// 2.Function Component
-function Greting(){
-    return (
+//2.Function Componet
+function Greeting() {
+    return(
         <div>
-            <h1>Hello ReactJS!</h1>
+            <h1>Hello Reactjs!</h1>
         </div>
-    )
+    ) 
 }
 
 function Frontend(){
     return(
         <div>
             <h2>Client side rendering</h2>
-            <ol>
+            <ol type="A">
                 <li>ReactJS</li>
                 <li>VueJS</li>
-                <li>Augular</li>
+                <li>Aungular</li>
             </ol>
         </div>
     )
@@ -26,14 +26,35 @@ function Frontend(){
 function Backend(){
     return(
         <div>
-            <h2>Server side rendering</h2>
-            <ol>
-                <li>NextJS</li>
-                <li>NuxtJS</li>
-                <li>NestJS</li>
-            </ol>
+        <h2>Server side rendering</h2>
+        <ol type="I">
+            <li>NextJS</li>
+            <li>NuxtJS</li>
+            <li>NestJS</li>
+        </ol>
         </div>
     )
+}
+
+function Time(){
+    const cTime = new Date().toTimeString()
+    return(
+        <div>
+            <p>The current time is{cTime}</p>
+        </div>
+    )
+}
+
+function getCurrentTime(){
+    return new Date().toTimeString()
+}
+
+function Country(props){
+    return <h2>I am a {props.message}</h2>
+}
+
+function province(){
+    return 
 }
 
 function MyApp(){
@@ -43,17 +64,22 @@ function MyApp(){
             <hr />
             <h1 className="text2">Hello, World! {fname}</h1>
             <hr />
-            <Greting />
+            <Greeting />
             <hr />
             <Frontend />
             <hr />
             <Backend />
+            <hr />
+            <Time />
+            <hr />
+            <Country message="Thailand" />
+            <p>The current time is <span className="text3">{getCurrentTime()}</span></p>
         </div>
     )
 }
 
 
-// const domContainer = document.querySelector('root');
-// const domContainer = document.getElementById('root');
+// const domContainer = document.querySelector('#root');
+const domContainer = document.getElementById('root');
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(<MyApp />);

@@ -6,6 +6,10 @@
     color:crimson;
 }
 
+.text3{
+    color:lightskyblue;
+}
+
 h1{
     color:cornflowerblue;
 }
@@ -15,5 +19,9 @@ h2{
 }
 
 ol{
-    color:indigo;
+    color:plum;
+}
+
+p{
+    color: pink;
 }
