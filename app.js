@@ -64,6 +64,10 @@ function Province(){
     ) 
 }
 
+function Photo(){
+    return <img src="https://picsum.photos/id/1060/536/354?blur=2" />
+}
+
 function MyApp(){
     return(
         <div>
@@ -82,6 +86,8 @@ function MyApp(){
             <Country message="Thailand" />
             <hr />
             <Province />
+            <hr />
+            <Photo />
             <p>The current time is <span className="text3">{getCurrentTime()}</span></p>
         </div>
     )
