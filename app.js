@@ -50,14 +50,16 @@ function getCurrentTime(){
 }
 
 function Country(props){
-    return <h2>I live in {props.message}</h2>
+    return <h2>I live in {props.message.name} {props.message.distric}</h2>
 }
 
 function Province(){
+    // const provinceInfo="Trat"
+    const provinceInfo={name:"Tart", distric: "Meang Trat"}
     return(
         <div>
             <h1>What province are you in?</h1>
-            <Country message="Trat" />
+            <Country message={provinceInfo} />
         </div>
     ) 
 }
