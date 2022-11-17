@@ -53,8 +53,13 @@ function Country(props){
     return <h2>I am a {props.message}</h2>
 }
 
-function province(){
-    return 
+function Province(){
+    return(
+        <div>
+            <h1>What province are you in?</h1>
+            <Country message="Trat" />
+        </div>
+    ) 
 }
 
 function MyApp(){
@@ -73,6 +78,8 @@ function MyApp(){
             <Time />
             <hr />
             <Country message="Thailand" />
+            <hr />
+            <Province />
             <p>The current time is <span className="text3">{getCurrentTime()}</span></p>
         </div>
     )
