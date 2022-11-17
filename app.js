@@ -50,7 +50,7 @@ function getCurrentTime(){
 }
 
 function Country(props){
-    return <h2>I am a {props.message}</h2>
+    return <h2>I live in {props.message}</h2>
 }
 
 function Province(){
