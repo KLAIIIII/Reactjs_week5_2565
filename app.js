@@ -23,6 +23,19 @@ function Frontend(){
     )
 }
 
+function Backend(){
+    return(
+        <div>
+            <h2>Server side rendering</h2>
+            <ol>
+                <li>NextJS</li>
+                <li>NuxtJS</li>
+                <li>NestJS</li>
+            </ol>
+        </div>
+    )
+}
+
 function MyApp(){
     return(
         <div>
@@ -33,6 +46,8 @@ function MyApp(){
             <Greting />
             <hr />
             <Frontend />
+            <hr />
+            <Backend />
         </div>
     )
 }
