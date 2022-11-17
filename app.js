@@ -10,6 +10,19 @@ function Greting(){
     )
 }
 
+function Frontend(){
+    return(
+        <div>
+            <h2>Client side rendering</h2>
+            <ol>
+                <li>ReactJS</li>
+                <li>VueJS</li>
+                <li>Augular</li>
+            </ol>
+        </div>
+    )
+}
+
 function MyApp(){
     return(
         <div>
@@ -18,6 +31,8 @@ function MyApp(){
             <h1 className="text2">Hello, World! {fname}</h1>
             <hr />
             <Greting />
+            <hr />
+            <Frontend />
         </div>
     )
 }
