@@ -1,7 +1,7 @@
 // 1.assignment variable
 const fname = "Mark Zuckaberg"
 
-// 2.Function
+// 2.Function Component
 function Greting(){
     return (
         <div>
